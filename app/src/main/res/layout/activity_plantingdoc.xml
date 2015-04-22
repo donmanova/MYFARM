@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ng.com.starthub.myfarm.Inventory"
+    android:orientation="vertical"
+    android:background="@drawable/phone_portrait">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAME:"
+                android:textStyle="bold"
+                android:layout_marginBottom="3dp"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/lquant"
+                android:height="30dp"
+                android:background="@drawable/edittext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUANTITY"
+                android:layout_marginBottom="3dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tbirds"
+                android:height="30dp"
+                android:background="@drawable/edittext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STOCK DATE:"
+                android:layout_marginBottom="3dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/sdate"
+                android:height="30dp"
+                android:background="@drawable/edittext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXPECTED HARVEST:"
+                android:layout_marginBottom="3dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/eharvest"
+                android:height="30dp"
+                android:background="@drawable/edittext"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROJECTED HARVEST DATE:"
+                android:layout_marginBottom="3dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/proj_date"
+                android:height="30dp"
+                android:background="@drawable/edittext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INITIAL COMMENT:"
+                android:layout_marginBottom="3dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:lines="5"
+                android:id="@+id/desc"
+                android:gravity="top"
+                android:background="@drawable/edittext"
+                />
+
+
+
+
+
+            />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"/>
+
+                <Button
+                    android:id="@+id/cance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CANCEL"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <EditTextPreference
+        android:key="@string/pref_emergency_key"
+        android:title="@string/pref_emergency_label"
+        android:maxLines="1"
+        android:inputType="text"
+        android:summary="@string/pref_emergency_default"
+        android:defaultValue="@string/pref_emergency_default"
+        android:persistent="true"
+        />
+
+    <EditTextPreference
+        android:key="@string/pref_supplier_key"
+        android:title="@string/pref_supplier_label"
+        android:maxLines="1"
+        android:inputType="text"
+        android:summary="@string/pref_supplier_default"
+        android:defaultValue="@string/pref_supplier_default"
+        android:persistent="true"/>
+
+
+</PreferenceScreen>

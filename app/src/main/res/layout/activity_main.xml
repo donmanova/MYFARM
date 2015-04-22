@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/phone_portrait">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginTop="20dp"
+            >
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+
+                >
+
+                <TextView
+                    android:id="@+id/outbrk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/report_crop_outbreak"
+                    android:text="REPORT OUTBREAK"
+                    android:layout_marginRight="20dp"
+                    android:textSize="17sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/searchh"
+                    android:text="VIEW SOLUTION"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="17sp"
+                    android:id="@+id/display"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/crop_analytics"
+                    android:text="FARM ANALYTICS"
+                    android:layout_marginRight="50dp"
+                    android:textSize="17sp"
+                    android:id="@+id/analytics"/>
+
+                <TextView
+                    android:id="@+id/contactvet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/doctor"
+                    android:text="FARM CLINIC"
+                    android:layout_marginRight="30dp"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="30dp"/>
+                <TextView
+                    android:id="@+id/inventory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/inventory"
+                    android:text="INVENTORY"
+                    android:layout_marginRight="20dp"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/diary"
+                    android:text="FARM LOG"
+                    android:layout_marginRight="30dp"
+                    android:textSize="17sp"
+                    android:id="@+id/diary"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/datta"
+                    android:text="VIEW LOGS"
+                    android:layout_marginRight="30dp"
+                    android:textSize="17sp"
+                    android:id="@+id/viewLog"
+                    android:layout_marginBottom="30dp"/>
+
+
+                </GridLayout>
+            </LinearLayout>
+    </ScrollView>
+
+
+        </LinearLayout>
